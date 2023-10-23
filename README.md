@@ -1,6 +1,6 @@
 # CodeGuide | 程序员编码指南
 
-> 你好，我是小傅哥，[《重学Java设计模式》](https://item.jd.com/13218336.html) 图书作者，一线互联网 Java 工程师、架构师。[:pencil2: 虫洞栈，博主](https://bugstack.cn)，[:memo: 关于我](https://bugstack.cn/md/other/guide-to-reading.html) 
+> 你好，我是小傅哥(Zhenk)，[《重学Java设计模式》](https://item.jd.com/13218336.html) 图书作者，一线互联网 Java 工程师、架构师。[:pencil2: 虫洞栈，博主](https://bugstack.cn)，[:memo: 关于我](https://bugstack.cn/md/other/guide-to-reading.html) 
 
 - :dog: 13年毕业，大厂互联网T8架构师，全网40万粉编程知识博主。
 - :man_technologist: 成长：[关于我，从小白到架构师的成长经历](https://www.bilibili.com/video/BV1FF41137q5)

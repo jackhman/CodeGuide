@@ -1,5 +1,5 @@
 module.exports = {
-    port: "8080",
+    port: "18080",
     dest: ".site",
     base: "/",
     // 是否开启默认预加载js
