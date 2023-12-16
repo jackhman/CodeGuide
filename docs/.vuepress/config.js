@@ -372,7 +372,11 @@ module.exports = {
                             {
                                 text: '业务类型', items: [
                                     {
-                                        text: 'ChatGPT 微服务应用体系构建',
+                                        text: '大营销平台系统',
+                                        link: '/md/project/big-market/big-market.md'
+                                    },
+                                    {
+                                        text: 'OpenAi 大模型应用服务体系构建',
                                         link: '/md/project/chatgpt/chatgpt.md'
                                     },
                                     {
@@ -504,6 +508,7 @@ module.exports = {
                     "/md/project/lottery/": getBarProjectLottery(),
                     "/md/project/im/": getBarProjectIM(),
                     "/md/project/chatbot-api/": getBarProjectChatBotApi(),
+                    "/md/project/big-market/": getBarBigMarket(),
                     "/md/zsxq/": getBarZSXQ(),
                     "/md/product/": getBarProduct(),
                     "/md/road-map/": genBarGuide(),
@@ -536,7 +541,16 @@ function genBarGuide() {
             collapsable: false,
             sidebarDepth: 2,
             children: [
-                "road-map.md"
+                "road-map.md",
+                "introduce.md"
+            ]
+        },
+        {
+            title: "工程脚手架(1)",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "ddd-archetype.md",
             ]
         },
         {
@@ -565,16 +579,18 @@ function genBarGuide() {
             ]
         },
         {
-            title: "开发技术(10)",
+            title: "开发技术(12)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
                 "mybatis.md",
                 "dubbo.md",
                 "rocketmq.md",
+                "rabbitmq.md",
                 "quartz.md",
                 "mysql.md",
                 "db-router.md",
+                "sharding-jdbc.md",
                 "connection-pool.md",
                 "zookeeper.md",
                 "redis.md",
@@ -582,30 +598,33 @@ function genBarGuide() {
             ]
         },
         {
-            title: "常用类库(3)",
+            title: "常用类库(4)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
                 "fastjson.md",
                 "guava.md",
                 "http.md",
+                "ratelimiter.md",
             ]
         },
         {
-            title: "工程测试(4)",
+            title: "工程测试(2)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
                 "mock.md",
-                "none.md",
+                "jmeter.md",
             ]
         },
         {
-            title: "质量监控(1)",
+            title: "质量监控(3)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
-                "skywalking.md"
+                "skywalking.md",
+                "grafana.md",
+                "elk.md",
             ]
         },
         {
@@ -1692,6 +1711,7 @@ function getBarZSXQ() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "project/big-market.md",
                 "project/chatgpt.md",
                 "project/lottery.md",
                 "project/im.md",
@@ -1703,6 +1723,7 @@ function getBarZSXQ() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "project/openai-sdk-java.md",
                 "project/api-gateway.md",
                 "project/springboot-starter.md",
                 "booklet/idea-plugin.md",
@@ -1725,7 +1746,7 @@ function getBarZSXQ() {
             sidebarDepth: 0,
             children: [
                 "source-code/develop-mybatis.md",
-                "source-code/develop-spring.md",
+                // "source-code/develop-spring.md",
             ]
         },
         {
@@ -1974,6 +1995,7 @@ function getBarProjectChatGPT() {
                 "chatgpt.md",
                 "引言.md",
                 "notes.md",
+                "review.md",
             ]
         },
         {
@@ -1988,6 +2010,8 @@ function getBarProjectChatGPT() {
                 "dev-ops/第5节：服务镜像构建和容器部署.md",
                 "dev-ops/第6节：前后端构建镜像部署.md",
                 "dev-ops/第7节：网站添加百度统计.md",
+                "dev-ops/第8节：应用监控.md",
+                "dev-ops/第9节：部署上线.md",
             ]
         },
         {
@@ -2004,6 +2028,8 @@ function getBarProjectChatGPT() {
                 "api/第7节：用户额度账户领域实现.md",
                 "api/第8节：商品下单对接微信支付.md",
                 "api/第9节：OpenAi多渠道策略模式.md",
+                "api/第10节：应用分布式设计.md",
+                "api/第11节：dall-e文生图.md",
             ]
         },
         {
@@ -2051,6 +2077,62 @@ function getBarProjectChatGPT() {
                 "extra/ChatGPT-v1.1.md",
                 "extra/ChatGPT-v1.2.md",
                 "extra/ChatGPT-v1.3.md",
+            ]
+        }
+    ]
+}
+
+function getBarBigMarket() {
+    return [
+        {
+            title: "介绍",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "big-market.md",
+            ]
+        },
+        {
+            title: "第1部分：需求文档",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "prd/第1节：营销场景的需求设计.md",
+                "none.md",
+            ]
+        },
+        {
+            title: "第2部分：开发运维",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "dev-ops/第1节：使用脚手架创建工程.md",
+                "none.md",
+            ]
+        },
+        {
+            title: "第3部分：营销服务",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "api/第1节：抽奖策略领域和库表设计.md",
+                "none.md",
+            ]
+        },
+        {
+            title: "第4部分：前端页面",
+            collapsable: true,
+            sidebarDepth: 0,
+            children: [
+                "none.md",
+            ]
+        },
+        {
+            title: "第5部分：后台管理",
+            collapsable: true,
+            sidebarDepth: 0,
+            children: [
+                "none.md",
             ]
         }
     ]

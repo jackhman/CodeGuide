@@ -1,9 +1,9 @@
 ---
-title: 课程：ChatGPT 微服务应用体系构建
+title: 课程：OpenAi 大模型应用服务体系构建
 lock: no
 ---
 
-# ChatGPT 微服务应用体系构建 - API-SDK、鉴权、公众号、企业微信、支付服务
+# OpenAi 大模型应用服务体系构建 - API-SDK、鉴权、公众号、企业微信、支付服务
 
 作者：小傅哥
 <br/>博客：[https://bugstack.cn](https://bugstack.cn)
@@ -86,8 +86,8 @@ lock: no
 
 ---
 
-好啦，想加入学习的伙伴，记得早些下手。因为每增加一个新项目，星球会提价20元。此项目在5.1正式启动后，会对星球提价20元。**所以现在加入是最爽的！**
+好啦，想加入学习的伙伴，记得早些下手。
 
 <div align="center">
-    <img src="https://bugstack.cn/images/system/zsxq/coupon.png?raw=true" width="400px">
+    <img src="https://bugstack.cn/images/article/zsxq/zsxq-youhuiquan.png?raw=true" width="400px">
 </div>
