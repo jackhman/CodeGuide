@@ -10,6 +10,8 @@ lock: need
 
 > 沉淀、分享、成长，让自己和他人都能有所收获！😄
 
+<iframe id="B-Video" src="//player.bilibili.com/player.html?aid=664765195&bvid=BV1pa4y1R7Rh&cid=1369260100&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="480"> </iframe>
+
 本文的宗旨在于通过易于上手实操的方式，教会读者完成系统ELK日志采集的对接和使用。那你知道对于一个系统的上线考察，必备的几样东西是什么吗？其实这也是面试中考察求职者，是否真的做过系统开发和上线的必备问题。包括：[服务治理(熔断/限流)](https://bugstack.cn/md/road-map/ratelimiter.html)、[监控](https://bugstack.cn/md/road-map/grafana.html)和日志，如果你做的系统里没有这样几个东西，一种是说明系统是玩具项目，另外一种就是压根没做过或者没关心过。前面的已经写完了，所以今天来给大家写ELK日志。
 
 本文涉及的工程：
@@ -36,7 +38,7 @@ Elastic Stack 技术栈，别是 `Elasticsearch`、`Logstash`、`Kibana` 组成�
 </div>
 
 - 环境；jdk 1.8、Maven 3.6.x、Docker 
-- 组件；ELK version 7.17.14 支持 ARM&ARM
+- 组件；ELK version 7.17.14 支持 ARM&AMD
 - 代码；在 xfg-dev-tech-elk 测试工程中提供了测试代码和环境安装，绿色按钮点击即可安装【确保你已经本地安装了 Docker】
 
 ### 1. 环境配置
@@ -224,4 +226,4 @@ public class Application {
     <img src="https://bugstack.cn/images/roadmap/tutorial/road-map-elk-08.png?raw=true" width="850px">
 </div>
 
-- 当你不段的访问接口，就可以看到上报的日志数据信息了。
+- 当你不断的访问接口，就可以看到上报的日志数据信息了。

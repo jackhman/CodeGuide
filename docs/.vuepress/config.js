@@ -405,6 +405,14 @@ module.exports = {
                                     },
                                 ]
                             },
+                            {
+                                text: '其他类型', items: [
+                                    {
+                                        text: '小场景训练营',
+                                        link: '/md/project/ddd-scene-solution/alipay-sandbox.md'
+                                    },
+                                ]
+                            },
                         ]
                     },
                     {
@@ -464,7 +472,10 @@ module.exports = {
                         text: '关于',
                         items: [
                             {text: '关于自己', link: '/md/about/me/about-me.md'},
-                            {text: '关于学习', link: '/md/about/study/2020-04-30-讲道理，只要你是一个爱折腾的程序员，毕业找工作真的不需要再花钱培训.md'},
+                            {
+                                text: '关于学习',
+                                link: '/md/about/study/2020-04-30-讲道理，只要你是一个爱折腾的程序员，毕业找工作真的不需要再花钱培训.md'
+                            },
                             {text: '关于职场', link: '/md/about/job/2020-04-11-工作两年简历写成这样，谁要你呀！.md'}
                         ]
                     },
@@ -476,6 +487,7 @@ module.exports = {
                         text: '源码',
                         items: [
                             {text: '开源项目 - Github', link: 'https://github.com/fuzhengwei'},
+                            {text: '开源项目 - Gitcode', link: 'https://gitcode.net/fuzhengwei'},
                             {text: '付费项目 - Gitcode', link: 'https://gitcode.net/KnowledgePlanet'},
                         ]
                     }
@@ -509,6 +521,7 @@ module.exports = {
                     "/md/project/im/": getBarProjectIM(),
                     "/md/project/chatbot-api/": getBarProjectChatBotApi(),
                     "/md/project/big-market/": getBarBigMarket(),
+                    "/md/project/ddd-scene-solution/": getBarDDDSceneSolution(),
                     "/md/zsxq/": getBarZSXQ(),
                     "/md/product/": getBarProduct(),
                     "/md/road-map/": genBarGuide(),
@@ -551,6 +564,7 @@ function genBarGuide() {
             sidebarDepth: 0,
             children: [
                 "ddd-archetype.md",
+                "ddd-archetype-maven.md",
             ]
         },
         {
@@ -579,7 +593,7 @@ function genBarGuide() {
             ]
         },
         {
-            title: "开发技术(12)",
+            title: "开发技术(14)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
@@ -587,6 +601,7 @@ function genBarGuide() {
                 "dubbo.md",
                 "rocketmq.md",
                 "rabbitmq.md",
+                "kafka.md",
                 "quartz.md",
                 "mysql.md",
                 "db-router.md",
@@ -595,6 +610,7 @@ function genBarGuide() {
                 "zookeeper.md",
                 "redis.md",
                 "ignite.md",
+                "canal.md",
             ]
         },
         {
@@ -628,12 +644,15 @@ function genBarGuide() {
             ]
         },
         {
-            title: "发布部署(2)",
+            title: "发布部署(5)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
+                "linux.md",
                 "docker.md",
-                "portainer.md"
+                "portainer.md",
+                "jenkins.md",
+                "buddy.md",
             ]
         }
     ]
@@ -752,7 +771,7 @@ function genAlgorithmLogic() {
 }
 
 // algorithm/model
-function genAlgorithmModel(){
+function genAlgorithmModel() {
     return [
         {
             title: "机器学习",
@@ -1126,6 +1145,7 @@ function genBarDevOPS() {
                 "2023-04-18-docker.md",
                 "2023-04-18-portainer.md",
                 "2023-04-18-nginx.md",
+                "2024-03-23-yun.md",
                 "2019-08-12-windows环境下安装elasticsearch6.2.2.md",
                 "2019-08-13-elasticsearch-head插件安装.md",
             ]
@@ -1146,6 +1166,7 @@ function genBarDevOPS() {
                 "2021-11-07-关于怎么使用 webhooks 自动部署博客，详细教程文档！.md",
                 "2022-03-04-教小白使用 docsify，搭建一个贼简单的所见即所得博客！.md",
                 "2023-03-25-免费部署部署ChatGPT.md",
+                "2024-01-30-vuepress-resume-blog.md",
             ]
         }
     ]
@@ -1780,9 +1801,11 @@ function getBarZSXQ() {
             sidebarDepth: 0,
             children: [
                 "memorabilia/seven-thousand.md",
+                "memorabilia/ten-thousand.md",
                 "memorabilia/overall.md",
                 "memorabilia/biographical-notes.md",
                 "memorabilia/interview-zijie.md",
+                "memorabilia/110000-lines-of-code.md",
             ]
         }
     ]
@@ -1808,7 +1831,6 @@ function getBarProduct() {
                 "pdf/2020-07-12-重学 Java 设计模式.md",
                 "pdf/2020-10-04-《Java面经手册》PDF数据结构篇， 肝完出炉了！来吧，这本书帮你拿最贵的offer！.md",
                 "pdf/2021-01-26-Java面经手册PDF下载.md",
-                "pdf/2021-08-12-《手撸 Spring》PDF，全书260页6.5万字，完稿&发版！.md",
                 "pdf/2022-01-23-IDEA Plugin 开发手册.md",
             ]
         },
@@ -1818,6 +1840,7 @@ function getBarProduct() {
             sidebarDepth: 0,
             children: [
                 "idea-plugin/vo2dto.md",
+                "idea-plugin/vo2dto-v2.5.1.md",
             ]
         },
     ]
@@ -2049,6 +2072,7 @@ function getBarProjectChatGPT() {
             sidebarDepth: 0,
             children: [
                 "sdk/chatglm-sdk-java.md",
+                "sdk/chatglm-sdk-java-v2.md",
             ]
         },
         {
@@ -2090,6 +2114,7 @@ function getBarBigMarket() {
             sidebarDepth: 0,
             children: [
                 "big-market.md",
+                "notes.md",
             ]
         },
         {
@@ -2098,7 +2123,7 @@ function getBarBigMarket() {
             sidebarDepth: 0,
             children: [
                 "prd/第1节：营销场景的需求设计.md",
-                "none.md",
+                "prd/第2节：抽奖活动场景的需求设计.md",
             ]
         },
         {
@@ -2107,7 +2132,7 @@ function getBarBigMarket() {
             sidebarDepth: 0,
             children: [
                 "dev-ops/第1节：使用脚手架创建工程.md",
-                "none.md",
+                "dev-ops/第2节：第一阶段完成抽奖部署.md",
             ]
         },
         {
@@ -2116,15 +2141,35 @@ function getBarBigMarket() {
             sidebarDepth: 0,
             children: [
                 "api/第1节：抽奖策略领域和库表设计.md",
+                "api/第2节：基础层持久化数据.md",
+                "api/第3节：策略概率装配处理.md",
+                "api/第4节：策略权重概率装配.md",
+                "api/第5节：抽奖前置规则过滤.md",
+                "api/第6节：抽奖后置规则过滤.md",
+                "api/第7节：责任链模式处理抽奖规则.md",
+                "api/第8节：抽奖规则树模型结构设计.md",
+                "api/第9节：模板模式串联抽奖规则.md",
+                "api/第10节：不超卖库存规则实现.md",
+                "api/第11节：抽奖API接口实现.md",
+                "api/第12节：用户参与抽奖活动库表设计.md",
+                "api/第13节：引入分库分表路由组件.md",
+                "api/第14节：抽奖活动订单流程设计.md",
+                "api/第15节：抽奖活动流水入库.md",
+                "api/第16节：引入MQ处理活动SKU库存一致性.md",
+                "api/第17节：用户领取活动库表设计.md",
+                "api/第18节：领取活动扣减账户额度.md",
+                "api/第19节：写入中奖记录和任务补偿发送.md",
                 "none.md",
             ]
         },
         {
             title: "第4部分：前端页面",
-            collapsable: true,
+            collapsable: false,
             sidebarDepth: 0,
             children: [
-                "none.md",
+                "web/第1节：React工程创建和抽奖组件使用.md",
+                "web/第2节：Mock接口对接抽奖页面.md",
+                "web/第3节：应用接口对接抽奖页面.md",
             ]
         },
         {
@@ -2134,7 +2179,33 @@ function getBarBigMarket() {
             children: [
                 "none.md",
             ]
+        },
+        {
+            title: "番外 - 课程阶段产物",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "extra/big-market-v1.md",
+                "extra/big-market-v2.md",
+                "extra/big-market-v3.md",
+            ]
         }
+    ]
+}
+
+function getBarDDDSceneSolution() {
+    return [
+        {
+            title: "课程",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "alipay-sandbox.md",
+                "openai-tldraw.md",
+                "sensitive-word-content-moderation.md",
+                "weixin-login.md",
+            ]
+        },
     ]
 }
 
@@ -2237,6 +2308,7 @@ function genBarAbout() {
                 "me/2020-12-27-2020总结，作为技术号主的一年！.md",
                 "me/2022-01-27-2021年，小傅哥の年终总结！.md",
                 "me/2023-01-02-2022年，小傅哥の年终总结.md",
+                "me/2024-02-07-2023年，小傅哥の年终总结.md",
                 "me/2020-07-25-12天，这本《重学Java设计模式》PDF书籍下载量9k，新增粉丝1400人，Github上全球推荐榜.md",
                 "me/2020-08-25-13年毕业，用两年时间从外包走进互联网大厂.md",
                 "me/2020-10-09-让人怪不好意思的，粉丝破万，用了1年！.md",
@@ -2253,6 +2325,8 @@ function genBarAbout() {
                 "me/2022-05-22-copyright-violation.md",
                 "me/2023-04-16-这是我异动的第一周，为啥离开原部门？.md",
                 "me/2023-05-07-51假期代码旅游.md",
+                "me/2024-01-09-从T4到T8，4年时间，4次晋升。技术提升最快的那几年，我做了什么？.md",
+                "me/2024-01-28-大厂架构师小傅哥，上学时都做过哪些项目？.md",
             ]
         },
         {
@@ -2278,6 +2352,7 @@ function genBarAbout() {
                 "study/2023-04-02-国外码农，会卷八股文吗？.md",
                 "study/2023-05-14-卧龙、凤雏！两源码学得一，代码质量都不会差！.md",
                 "study/2023-06-04-后端码农，怎么写好前端代码？.md",
+                "study/2024-03-03-到5万就好了.md",
             ]
         },
         {
