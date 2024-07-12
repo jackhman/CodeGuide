@@ -47,7 +47,7 @@ module.exports = {
         ["meta", {"http-equiv": "Expires", content: "0"}],
         ["meta", {
             name: "keywords",
-            content: "小傅哥, bugstack 虫洞栈, DDD抽奖系统，数据结构，重学Java设计模式, 字节码编程, 中间件, 手写Spring, 手写MyBatis，Java基础, 面经手册，Java面试题，API网关，SpringBoot Stater, ChatGPT"
+            content: "小傅哥, bugstack 虫洞栈, 实战项目, 应用项目, 面试项目, DDD抽奖系统，数据结构，重学Java设计模式, 字节码编程, 中间件, 手写Spring, 手写MyBatis，Java基础, 面经手册，Java面试题，API网关，SpringBoot Stater, ChatGPT"
         }],
         ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
         ['script',
@@ -229,7 +229,7 @@ module.exports = {
                                 link: '/md/spring/develop-spring/2021-05-16-第1章：开篇介绍，手写Spring能给你带来什么？.md'
                             },
                             {
-                                text: 'Mybatis 手撸专栏',
+                                text: 'MyBatis 手撸专栏',
                                 link: '/md/spring/develop-mybatis/2022-03-20-第1章：开篇介绍，手写Mybatis能给你带来什么？.md'
                             },
                             {
@@ -396,12 +396,32 @@ module.exports = {
                             {
                                 text: '组件类型', items: [
                                     {
+                                        text: 'OpenAI 代码自动评审',
+                                        link: 'https://bugstack.cn/md/zsxq/project/openai-code-review.html'
+                                    },
+                                    {
+                                        text: '透视业务流程-监控系统',
+                                        link: 'https://bugstack.cn/md/zsxq/project/business-behavior-monitor.html'
+                                    },
+                                    {
+                                        text: '动态线程池组件',
+                                        link: 'https://bugstack.cn/md/zsxq/project/dynamic-thread-pool.html'
+                                    },
+                                    {
+                                        text: '支付SDK设计和开发',
+                                        link: 'https://bugstack.cn/md/zsxq/project/ltzf-sdk-java.html'
+                                    },
+                                    {
                                         text: 'SpringBoot 中间件设计和开发',
                                         link: 'https://bugstack.cn/md/assembly/middleware/2021-03-31-%E3%80%8ASpringBoot%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%BC%80%E5%8F%91%E3%80%8B%E4%B8%93%E6%A0%8F%E5%B0%8F%E5%86%8C%E4%B8%8A%E7%BA%BF%E5%95%A6%EF%BC%81.html'
                                     },
                                     {
                                         text: 'API网关：中间件设计和实践',
                                         link: 'https://bugstack.cn/md/assembly/api-gateway/api-gateway.html'
+                                    },
+                                    {
+                                        text: 'IDEA Plugin 插件开发',
+                                        link: 'https://bugstack.cn/md/assembly/idea-plugin/2021-08-27-%E6%8A%80%E6%9C%AF%E8%B0%83%E7%A0%94%EF%BC%8CIDEA%20%E6%8F%92%E4%BB%B6%E6%80%8E%E4%B9%88%E5%BC%80%E5%8F%91%EF%BC%9F.html'
                                     },
                                 ]
                             },
@@ -437,16 +457,16 @@ module.exports = {
                             {
                                 text: 'PDF —— 加入星球免费获取', items: [
                                     {
-                                        text: '免费《字节码编程手册》(密码：Rlxbh1ia)',
-                                        link: 'http://pan.bugstack.cn/?dl=05b281eff1476e2c22eb5114ced0dc4d'
+                                        text: '免费《字节码编程手册》',
+                                        link: 'https://drive.weixin.qq.com/s?k=ACMA4AfQABUJWQ0P92'
                                     },
                                     {
                                         text: '免费《重学Java设计模式》——旧版PDF(密码：FWchEAF6)',
-                                        link: 'http://pan.bugstack.cn/?dl=431e114a26f810655d29b6dea54a680f'
+                                        link: 'https://drive.weixin.qq.com/s?k=ACMA4AfQABUg04LF5X'
                                     },
                                     {
-                                        text: '免费《倚天村 • 图解数据结构》(密码：0SjbAlPa)',
-                                        link: 'http://pan.bugstack.cn/?dl=dbed614f318bf9fc9d3b034ba9502a3c'
+                                        text: '免费《倚天村 • 图解数据结构》',
+                                        link: 'https://drive.weixin.qq.com/s?k=ACMA4AfQABUm2EZtFm'
                                     },
                                     {
                                         text: '付费《Java 面经手册》',
@@ -568,12 +588,14 @@ function genBarGuide() {
             ]
         },
         {
-            title: "系统架构(5)",
+            title: "系统架构(6)",
             collapsable: false,
             sidebarDepth: 0,
             children: [
                 "mvc.md",
+                "ddd-guide-01.md",
                 "ddd.md",
+                "ddd-model.md",
                 "mvc2ddd.md",
                 "ddd-dev-account.md",
                 "ddd-dev-pay.md",
@@ -597,6 +619,7 @@ function genBarGuide() {
             collapsable: true,
             sidebarDepth: 0,
             children: [
+                "spring-dependency-injection.md",
                 "mybatis.md",
                 "dubbo.md",
                 "rocketmq.md",
@@ -614,7 +637,7 @@ function genBarGuide() {
             ]
         },
         {
-            title: "常用类库(4)",
+            title: "常用类库(5)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
@@ -622,6 +645,7 @@ function genBarGuide() {
                 "guava.md",
                 "http.md",
                 "ratelimiter.md",
+                "spring-ai.md",
             ]
         },
         {
@@ -644,15 +668,28 @@ function genBarGuide() {
             ]
         },
         {
-            title: "发布部署(5)",
+            title: "发布部署(8)",
             collapsable: true,
             sidebarDepth: 0,
             children: [
                 "linux.md",
                 "docker.md",
                 "portainer.md",
+                "nginx.md",
+                "ssl.md",
                 "jenkins.md",
                 "buddy.md",
+                "github-actions-workflows.md",
+            ]
+        },
+        {
+            title: "应用网关(3)",
+            collapsable: true,
+            sidebarDepth: 0,
+            children: [
+                "higress.md",
+                "springcloud-gateway.md",
+                "apisix.md",
             ]
         }
     ]
@@ -977,6 +1014,7 @@ function genBarSpringDevelopMybatis() {
             children: [
                 "2022-07-07-第21章：完结.md",
                 "2022-07-15-第22章：Mybatis设计模式.md",
+                "2024-04-28-mybatis-source-code-analysis-diagram.md",
             ]
         }
     ]
@@ -1208,6 +1246,7 @@ function genBarDevelopFramework() {
                 "scheme/2021-07-19-调研字节码插桩技术，用于系统监控设计和实现.md",
                 "scheme/2022-02-14-基于库表分段扫描和数据Redis预热，优化分布式延迟任务触达时效性.md",
                 "scheme/2022-02-21-怎么说服领导，能让我用DDD架构.md",
+                "scheme/2024-06-19-通过可重入锁思想，设计MQ迁移方案.md",
             ]
         }
     ]
@@ -1744,6 +1783,9 @@ function getBarZSXQ() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
+                "project/openai-code-review.md",
+                "project/business-behavior-monitor.md",
+                "project/dynamic-thread-pool.md",
                 "project/ltzf-sdk-java.md",
                 "project/openai-sdk-java.md",
                 "project/api-gateway.md",
@@ -1807,6 +1849,9 @@ function getBarZSXQ() {
                 "memorabilia/biographical-notes.md",
                 "memorabilia/interview-zijie.md",
                 "memorabilia/110000-lines-of-code.md",
+                "memorabilia/java-resume-Project.md",
+                "memorabilia/student-offer.md",
+                "memorabilia/project-plan-v2406.md",
             ]
         }
     ]
@@ -2115,6 +2160,7 @@ function getBarBigMarket() {
             sidebarDepth: 0,
             children: [
                 "big-market.md",
+                "ddd.md",
                 "notes.md",
             ]
         },
@@ -2125,6 +2171,8 @@ function getBarBigMarket() {
             children: [
                 "prd/第1节：营销场景的需求设计.md",
                 "prd/第2节：抽奖活动场景的需求设计.md",
+                "prd/第3节：用户行为奖励需求设计.md",
+                "prd/第4节：用户积分需求设计.md",
             ]
         },
         {
@@ -2134,6 +2182,7 @@ function getBarBigMarket() {
             children: [
                 "dev-ops/第1节：使用脚手架创建工程.md",
                 "dev-ops/第2节：第一阶段完成抽奖部署.md",
+                "dev-ops/第3节：引入Nacos+Dubbo框架.md",
             ]
         },
         {
@@ -2161,6 +2210,14 @@ function getBarBigMarket() {
                 "api/第18节：领取活动扣减账户额度.md",
                 "api/第19节：写入中奖记录和任务补偿发送.md",
                 "api/第20节：抽奖活动流程串联.md",
+                "api/第21节：活动信息API迭代和功能完善.md",
+                "api/第22节：用户行为返利入账.md",
+                "api/第23节：用户行为返利结算.md",
+                "api/第24节：规则完善和应用接口实现.md",
+                "api/第25节：积分发奖服务实现.md",
+                "api/第26节：积分领域调额服务.md",
+                "api/第27节：积分支付兑换商品.md",
+                "api/第28节：积分应用场景接口实现.md",
                 "none.md",
             ]
         },
@@ -2172,6 +2229,9 @@ function getBarBigMarket() {
                 "web/第1节：React工程创建和抽奖组件使用.md",
                 "web/第2节：Mock接口对接抽奖页面.md",
                 "web/第3节：应用接口对接抽奖页面.md",
+                "web/第4节：抽奖活动页面设计和对接.md",
+                "web/第5节：对接联调额度签到权重接口.md",
+                "web/第6节：对接联调积分流程接口.md",
             ]
         },
         {
@@ -2190,6 +2250,8 @@ function getBarBigMarket() {
                 "extra/big-market-v1.md",
                 "extra/big-market-v2.md",
                 "extra/big-market-v3.md",
+                "extra/big-market-v4.md",
+                "extra/big-market-v5.md",
             ]
         }
     ]

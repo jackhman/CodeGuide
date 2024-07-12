@@ -20,6 +20,10 @@ lock: need
     <img src="https://bugstack.cn/images/roadmap/tutorial/road-map-maven-archetype-01.png" width="850px">
 </div>
 
+【备用地址 http://maven.gaga.plus/ 】- 如果配置 https://gaga.plus 不可用，可以使用备用地址。
+
+---
+
 **那小傅哥搞的这个在线版脚手架是怎么做到的呢？** 🤔 想学吗，想学我教你呀？
 
 在23年的时候小傅哥发布了 DDD 两款脚手架，一个轻量版 lite ，一个标准版 std。通过这两款脚手架，小伙伴们在学习小傅哥写的技术教程和实战项目的时候，可以把脚手架代码下载到本地，通过 `maven install` 在本地构建出脚手架再配置到上图中的地址后使用。
@@ -34,7 +38,7 @@ lock: need
 
 我发布过自己的 IntelliJ IDEA vo2dto 到插件市场，也推送过 openai sdk、chatglm sdk、db-router 等组件到 Maven 中央仓库。
 
-那我就心思了，这脚手架也是个 Jar 包，应该也能发布到 Maven 中央仓库呀。要不Maven Central 自己那个脚手架是怎么发上去的？在编程开发这个事上，我一直秉承着，只要我能看见的，就都应该能复刻出来。
+那我就寻思了，这脚手架也是个 Jar 包，应该也能发布到 Maven 中央仓库呀。要不Maven Central 自己那个脚手架是怎么发上去的？在编程开发这个事上，我一直秉承着，只要我能看见的，就都应该能复刻出来。
 
 但你知道这里有一点，发布到 Maven 仓库的是 Jar 包，那我配置脚手架的地址哪里来呢（地址里是脚手架的定义）？我应该也没办法把脚手架的定义推送到人家 maven.apache.org 下面去。毕竟那是人家的老巢。如果能推送，那我现在打开的 Maven Central 应该有一堆脚手架，而不只是 Maven Central 所发布自己的。
 
@@ -279,7 +283,7 @@ lock: need
 </project>
 ```
 
-- 注意 groupId、artifactId 名字，如果你有发布诉求，需要和你自己的一直。
+- 注意 groupId、artifactId 名字，如果你有发布诉求，需要和你自己的一致。
 - maven-javadoc-plugin：生成 doc 文档。这里要注意，因为我们脚手架不是代码文件，没有doc的，所以要在工程中加一个任意类名文件。工程中小傅哥加了个 Api 类。
 - maven-source-plugin：生成 source 文件。
 - maven-gpg-plugin：是签名的加密文件，需要本地安装过 gpg 包。

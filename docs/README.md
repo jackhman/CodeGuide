@@ -14,6 +14,9 @@ actionLinks:
 - link: https://gaga.plus
   text: 项目 💐
   class: secondary    
+- link: https://618.gaga.plus
+  text: 3.8元/月(云服务器) ☁️
+  class: secondary
 features:
 - title: 沉淀
   details: 承遇朝霞，年少正恰。整装戎马，刻印风华。
@@ -28,9 +31,10 @@ footer: <a href="http://beian.miit.gov.cn" target="_blank">京ICP备19031103号<
 
 ## 更新计划
 
-1. [星球：码农会锁，新项目《大营销平台系统》](https://bugstack.cn/md/project/big-market/big-market.html) - 小傅哥第8个项目，前后端 + Dev-Ops 的全栈式综合编程实战DDD项目！
-2. [Java DDD 简明教程小册 - `进行中👣`](https://bugstack.cn/md/road-map/road-map.html) - `将项目所需的知识点进行碎片化的拆解，形成一套整套以实战为目的地的Java简明教程，方便小白清晰准确的学习编程知识。`
-3. [小场景训练营 - `进行中👣`](https://bugstack.cn/md/project/ddd-scene-solution/alipay-sandbox.html) - `技术，是承接业务需求提供解决方案的综合运用，而从实际需求中摘取出来的小场景学习，包括；支付、短信、地图、人脸、规则、短信猫、三方登录等，都可以非常好的锻炼思维，提高编码能力。`
+1. [OpenAI 代码自动评审组件](https://bugstack.cn/md/zsxq/project/openai-code-review.html) - `通过 GitHub Actions、Git、OpenAI、微信公众号，完成项目自动化评审和消息通知。`
+2. [透视业务流程 - 监控系统](https://bugstack.cn/md/zsxq/project/business-behavior-monitor.html) - `项目采用基于扩展 logback 日志上报数据进行 ognl 配置节点公式的方式进行采集、计算和可视化渲染。`
+3. [大营销平台系统](https://bugstack.cn/md/project/big-market/big-market.html) - `小傅哥第8个项目，前后端 + Dev-Ops 的全栈式综合编程实战DDD项目！`
+4. [Java DDD 简明教程小册 - `进行中👣`](https://bugstack.cn/md/road-map/road-map.html) - `将项目所需的知识点进行碎片化的拆解，形成一套整套以实战为目的地的Java简明教程，方便小白清晰准确的学习编程知识。`
 
 ## 大厂项目
 
